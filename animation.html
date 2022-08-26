@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bdy">
+        <div class="border">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+
+        </div>
+        <div class="slectcolors">
+            <h1>CHOOSE YOUR COLORS</h1>
+            <button id="btn1">
+                Select 1st Color
+                <input type="color" value='#08C708' name="Select_1st_Color" id="div1">
+            </button>
+            <button id="btn2">
+                Select 2nd Color
+                <input type="color" value="#B0E4B0" name="Select_2nd_Color" id="div2">
+            </button>
+            <button id="btn3">
+                Select 3rd Color
+                <input type="color" value="#050F05" name="Select_3rd_Color" id="div3">
+            </button>
+        </div>
+    </div>
+    <button id="changeColor">Click To change Color</button>
+    <hr>
+    <div class="header">
+        <h1>Etch a Sketch</h1>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <div class="pickerContainer">
+                <!-- add a color picker -->
+                <input type="color" class="colorPicker" name="favcolor" value="#645a99" />
+            </div>
+            <button class="chooseColor Button">CHOOSE COLOR</button>
+            <button class="eraser Button">ERASER</button>
+            <button class="rainbow Button">RAINBOW</button>
+            <button class="clear Button">CLEAR</button>
+
+            <div class="slideContainer">
+                <input type="range" min="2" max="64" value="16" class="slider myRange" />
+            </div>
+            <div class="gridNumberOutput"></div>
+        </div>
+
+        <div class="sketchContainer"></div>
+    </div>
+    <div class="footer">Copyright &copy Abduljabbar 2022</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
